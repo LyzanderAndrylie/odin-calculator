@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+    /* For debugging */
+    /* border: 1px solid red; */
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: 32px;
+    width: 60px;
+    aspect-ratio: 1 / 1;
+    border-radius: 20px;
+    background-color: #365973;
+    color: #d3f1ff;
+    border: 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+button:hover {
+    filter: brightness(75%);
+}
+
+#calculator {
+    width: 300px;
+    height: 520px;
+    padding: 16px;
+    background-color: #023047;
+    border-radius: 20px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#display {
+    text-align: right;
+    height: 120px;
+    font-size: 32px;
+    background-color: #194058;
+    color: #ffe992;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 16px;
+}
+
+#current-progress {
+    color: #ffe992;
+    filter: brightness(75%);
+    font-size: 24px;
+}
+
+#keypad {
+    display: flex;
+    justify-content: space-between;
+}
+
+#control-button,
+.button-row {
+    margin-bottom: 8px;
+}
+
+#number-button:last-child {
+    margin-bottom: 0;
+}
+
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+#operator-button {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #95cce7;
+}
+
+#operator-button > button {
+    background-color: #805b00;
+    color: #ffe992;
+}
+
+#operator-button #add {
+    flex: 1;
+    margin-bottom: 8px;
+}
