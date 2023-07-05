@@ -12,44 +12,44 @@
 <body>
     <div id="calculator">
         <div id="display">
-            <div id="current-progress">10 +</div>
-            <div id="result">10</div>
+            <div id="current-progress"></div>
+            <div id="result"></div>
         </div>
         <div id="keypad">
             <div id="container">
                 <div id="control-button" class="button-row">
-                    <button>C</button>
-                    <button>CE</button>
-                    <button>←</button>
+                    <button id="clear">C</button>
+                    <button id="ce">CE</button>
+                    <button id="delete">←</button>
                 </div>
                 <div id="number-button">
                     <div class="button-row">
-                        <button>7</button>
-                        <button>8</button>
-                        <button>9</button>
+                        <button class="number" data-key="7">7</button>
+                        <button class="number" data-key="8">8</button>
+                        <button class="number" data-key="9">9</button>
                     </div>
                     <div class="button-row">
-                        <button>4</button>
-                        <button>5</button>
-                        <button>6</button>
+                        <button class="number" data-key="4">4</button>
+                        <button class="number" data-key="5">5</button>
+                        <button class="number" data-key="6">6</button>
                     </div>
                     <div class="button-row">
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
+                        <button class="number" data-key="1">1</button>
+                        <button class="number" data-key="2">2</button>
+                        <button class="number" data-key="3">3</button>
                     </div>
                     <div class="button-row">
-                        <button>0</button>
-                        <button>.</button>
-                        <button>=</button>
+                        <button class="number" data-key="0">0</button>
+                        <button id="dot">.</button>
+                        <button id="equal">=</button>
                     </div>
                 </div>
             </div>
             <div id="operator-button">
-                <button id="divide">/</button>
-                <button id="multiply">x</button>
-                <button id="substract">-</button>
-                <button id="add">+</button>
+                <button id="divide" data-key="/">/</button>
+                <button id="multiply" data-key="*">x</button>
+                <button id="substract" data-key="-">-</button>
+                <button id="add" data-key="+">+</button>
             </div>
         </div>
     </div>
